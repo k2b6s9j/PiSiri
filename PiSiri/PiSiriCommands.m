@@ -28,7 +28,7 @@
 	// NSLog(@"PiSiriCommands handleSpeech: %@", text);
 	
 	// react to recognized tokens (what happen or what happened)
-	if ([tokens count] >= 2 && [[tokens objectAtIndex:0] isEqualToString:@"say"] &&
+	if ([tokens count] >= 2 && [[tokens objectAtIndex:0] isEqualToString:@"test"] &&
 		([tokenset containsObject:@"pi"] || [tokenset containsObject:@"pie"]))
 	{
 		// three ways to respond...
