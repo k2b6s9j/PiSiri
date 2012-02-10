@@ -293,9 +293,9 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = assistantExtension;
 				iOSOpenDevCopyOnBuild = NO;
-				iOSOpenDevDevice = "";
-				iOSOpenDevInstallOnProfiling = NO;
-				iOSOpenDevRespringOnInstall = NO;
+				iOSOpenDevDevice = "Keplers-iPhone.local";
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
 				iOSOpenDevUsePackageVersionPList = YES;
 			};
 			name = Release;
@@ -310,9 +310,9 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = assistantExtension;
 				iOSOpenDevCopyOnBuild = NO;
-				iOSOpenDevDevice = "";
-				iOSOpenDevInstallOnProfiling = NO;
-				iOSOpenDevRespringOnInstall = NO;
+				iOSOpenDevDevice = "Keplers-iPhone.local";
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
 				iOSOpenDevUsePackageVersionPList = YES;
 			};
 			name = Debug;
@@ -336,6 +336,7 @@
 				E630E76814E4A52000137800 /* Debug */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
