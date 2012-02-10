@@ -1,0 +1,343 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E630E74614E4A52000137800 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E630E74514E4A52000137800 /* Foundation.framework */; };
+		E630E74814E4A52000137800 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E630E74714E4A52000137800 /* UIKit.framework */; };
+		E630E75C14E4A52000137800 /* PiSiriCommands.m in Sources */ = {isa = PBXBuildFile; fileRef = E630E75B14E4A52000137800 /* PiSiriCommands.m */; };
+		E630E75F14E4A52000137800 /* PiSiriSnippet.m in Sources */ = {isa = PBXBuildFile; fileRef = E630E75E14E4A52000137800 /* PiSiriSnippet.m */; };
+		E630E76214E4A52000137800 /* PiSiriExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = E630E76114E4A52000137800 /* PiSiriExtension.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		E630E74214E4A52000137800 /* PiSiri.assistantExtension */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PiSiri.assistantExtension; sourceTree = BUILT_PRODUCTS_DIR; };
+		E630E74514E4A52000137800 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E630E74714E4A52000137800 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		E630E74C14E4A52000137800 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		E630E74D14E4A52000137800 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		E630E74E14E4A52000137800 /* preinst */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = preinst; path = Package/DEBIAN/preinst; sourceTree = "<group>"; };
+		E630E74F14E4A52000137800 /* postinst */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = postinst; path = Package/DEBIAN/postinst; sourceTree = "<group>"; };
+		E630E75014E4A52000137800 /* prerm */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = prerm; path = Package/DEBIAN/prerm; sourceTree = "<group>"; };
+		E630E75114E4A52000137800 /* postrm */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; name = postrm; path = Package/DEBIAN/postrm; sourceTree = "<group>"; };
+		E630E75314E4A52000137800 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		E630E75414E4A52000137800 /* PiSiri-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PiSiri-Info.plist"; sourceTree = "<group>"; };
+		E630E75814E4A52000137800 /* 0xdeadfa11 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 0xdeadfa11; path = Package/Library/AssistantExtensions/PiSiri.assistantExtension/0xdeadfa11; sourceTree = "<group>"; };
+		E630E75914E4A52000137800 /* PiSiri-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PiSiri-Prefix.pch"; sourceTree = "<group>"; };
+		E630E75A14E4A52000137800 /* PiSiriCommands.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PiSiriCommands.h; sourceTree = "<group>"; };
+		E630E75B14E4A52000137800 /* PiSiriCommands.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PiSiriCommands.m; sourceTree = "<group>"; };
+		E630E75D14E4A52000137800 /* PiSiriSnippet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PiSiriSnippet.h; sourceTree = "<group>"; };
+		E630E75E14E4A52000137800 /* PiSiriSnippet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PiSiriSnippet.m; sourceTree = "<group>"; };
+		E630E76014E4A52000137800 /* PiSiriExtension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PiSiriExtension.h; sourceTree = "<group>"; };
+		E630E76114E4A52000137800 /* PiSiriExtension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PiSiriExtension.m; sourceTree = "<group>"; };
+		E630E76314E4A52000137800 /* PiSiriNib.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PiSiriNib.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E630E73E14E4A52000137800 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E630E74614E4A52000137800 /* Foundation.framework in Frameworks */,
+				E630E74814E4A52000137800 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E630E73614E4A51F00137800 = {
+			isa = PBXGroup;
+			children = (
+				E630E74914E4A52000137800 /* PiSiri */,
+				E630E74414E4A52000137800 /* Frameworks */,
+				E630E74314E4A52000137800 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E630E74314E4A52000137800 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E630E74214E4A52000137800 /* PiSiri.assistantExtension */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E630E74414E4A52000137800 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E630E74514E4A52000137800 /* Foundation.framework */,
+				E630E74714E4A52000137800 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E630E74914E4A52000137800 /* PiSiri */ = {
+			isa = PBXGroup;
+			children = (
+				E630E75A14E4A52000137800 /* PiSiriCommands.h */,
+				E630E75B14E4A52000137800 /* PiSiriCommands.m */,
+				E630E75D14E4A52000137800 /* PiSiriSnippet.h */,
+				E630E75E14E4A52000137800 /* PiSiriSnippet.m */,
+				E630E76014E4A52000137800 /* PiSiriExtension.h */,
+				E630E76114E4A52000137800 /* PiSiriExtension.m */,
+				E630E76314E4A52000137800 /* PiSiriNib.xib */,
+				E630E74A14E4A52000137800 /* Package */,
+				E630E75214E4A52000137800 /* Supporting Files */,
+			);
+			path = PiSiri;
+			sourceTree = "<group>";
+		};
+		E630E74A14E4A52000137800 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				E630E74B14E4A52000137800 /* DEBIAN */,
+				E630E75514E4A52000137800 /* Library */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		E630E74B14E4A52000137800 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				E630E74C14E4A52000137800 /* control.txt */,
+				E630E74D14E4A52000137800 /* control */,
+				E630E74E14E4A52000137800 /* preinst */,
+				E630E74F14E4A52000137800 /* postinst */,
+				E630E75014E4A52000137800 /* prerm */,
+				E630E75114E4A52000137800 /* postrm */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		E630E75214E4A52000137800 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E630E75314E4A52000137800 /* PackageVersion.plist */,
+				E630E75414E4A52000137800 /* PiSiri-Info.plist */,
+				E630E75914E4A52000137800 /* PiSiri-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E630E75514E4A52000137800 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				E630E75614E4A52000137800 /* AssistantExtensions */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		E630E75614E4A52000137800 /* AssistantExtensions */ = {
+			isa = PBXGroup;
+			children = (
+				E630E75714E4A52000137800 /* ___PACKAGENAME___.assistantExtension */,
+			);
+			name = AssistantExtensions;
+			sourceTree = "<group>";
+		};
+		E630E75714E4A52000137800 /* ___PACKAGENAME___.assistantExtension */ = {
+			isa = PBXGroup;
+			children = (
+				E630E75814E4A52000137800 /* 0xdeadfa11 */,
+			);
+			name = "___PACKAGENAME___.assistantExtension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		E630E73F14E4A52000137800 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		E630E74114E4A52000137800 /* PiSiri */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E630E76614E4A52000137800 /* Build configuration list for PBXNativeTarget "PiSiri" */;
+			buildPhases = (
+				E630E73D14E4A52000137800 /* Sources */,
+				E630E73E14E4A52000137800 /* Frameworks */,
+				E630E73F14E4A52000137800 /* Headers */,
+				E630E74014E4A52000137800 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PiSiri;
+			productName = PiSiri;
+			productReference = E630E74214E4A52000137800 /* PiSiri.assistantExtension */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E630E73814E4A51F00137800 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = E630E73B14E4A51F00137800 /* Build configuration list for PBXProject "PiSiri" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E630E73614E4A51F00137800;
+			productRefGroup = E630E74314E4A52000137800 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E630E74114E4A52000137800 /* PiSiri */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E630E74014E4A52000137800 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E630E73D14E4A52000137800 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E630E75C14E4A52000137800 /* PiSiriCommands.m in Sources */,
+				E630E75F14E4A52000137800 /* PiSiriSnippet.m in Sources */,
+				E630E76214E4A52000137800 /* PiSiriExtension.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		E630E76414E4A52000137800 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		E630E76514E4A52000137800 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		E630E76714E4A52000137800 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PiSiri/PiSiri-Prefix.pch";
+				INFOPLIST_FILE = "PiSiri/PiSiri-Info.plist";
+				INSTALL_PATH = /Library/AssistantExtensions;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = assistantExtension;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnProfiling = NO;
+				iOSOpenDevRespringOnInstall = NO;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+		E630E76814E4A52000137800 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PiSiri/PiSiri-Prefix.pch";
+				INFOPLIST_FILE = "PiSiri/PiSiri-Info.plist";
+				INSTALL_PATH = /Library/AssistantExtensions;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = assistantExtension;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnProfiling = NO;
+				iOSOpenDevRespringOnInstall = NO;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E630E73B14E4A51F00137800 /* Build configuration list for PBXProject "PiSiri" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E630E76414E4A52000137800 /* Release */,
+				E630E76514E4A52000137800 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E630E76614E4A52000137800 /* Build configuration list for PBXNativeTarget "PiSiri" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E630E76714E4A52000137800 /* Release */,
+				E630E76814E4A52000137800 /* Debug */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E630E73814E4A51F00137800 /* Project object */;
+}
